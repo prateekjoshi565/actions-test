@@ -22,4 +22,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a Python script
+        env: 
+          MY_SECRET_KEY: ${{secrets.MY_SECRET_KEY}}
         run: python example.py
